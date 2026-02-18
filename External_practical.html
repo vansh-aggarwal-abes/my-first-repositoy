@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>External Practical</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial;
+    }
+
+    h1 {
+      text-align: center;
+     }
+
+    form {
+      background-color: white;
+      width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid gray;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: green;
+      color: white;
+      margin: 15px auto;
+      padding: 8px;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Student Registration Form</h1>
+
+  <form action="#" method="POST">
+
+    <label>First Name:</label>
+    <input type="text" name="Fname" placeholder="Enter first name" required />
+
+    <label>Last Name:</label>
+    <input type="text" name="Lname" placeholder="Enter last name" required />
+
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required />
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required />
+
+    <label>Department:</label>
+    <select name="dept" required>
+      <option value="CS">CSE</option>
+      <option value="CSDS">CSE-DS</option>
+      <option value="CSAI">CSE-AI/ML</option>
+      <option value="ME">Mechanical</option>
+      <option value="EC">ECE</option>
+    </select>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" placeholder="Enter phone number" required />
+
+    <label>Address:</label>
+    <textarea name="address" placeholder="Enter your address"></textarea>
+
+    <input type="submit" value="Register" />
+
+  </form>
+
+</body>
+</html>
